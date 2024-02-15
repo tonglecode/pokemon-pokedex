@@ -24,7 +24,7 @@ const PokemonDetails = ({ pokemon }: any) => {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: "center", margin: "2rem" }}>
       <h2>
         {pokemon.korean_name} (#{pokemon.id})
       </h2>
