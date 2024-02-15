@@ -24,18 +24,22 @@ const PokemonDetails = ({ pokemon }: any) => {
   };
 
   return (
-    <div style={{ textAlign: "center", margin: "2rem" }}>
-      <h2>
-        {pokemon.korean_name} (#{pokemon.id})
-      </h2>
-      <img src={pokemon.sprites.front_default} alt={pokemon.korean_name} />
-      <p>English Name: {pokemon.name}</p>
-      <p>Height: {pokemon.height}</p>
-      <p>Weight: {pokemon.weight}</p>
-      <p>Type: {renderTypes()}</p>
-      <p>Abilities: {renderAbilities()}</p>
-      <p>Moves:</p>
-      <ul>{renderMoves()}</ul>
+    <div>
+      <div style={{ width: "11rem", textAlign: "center", margin: "2rem" }}>
+        <h2>
+          {pokemon.korean_name} (#{pokemon.id})
+        </h2>
+        <img src={pokemon.sprites.front_default} alt={pokemon.korean_name} />
+        <p>English Name: {pokemon.name}</p>
+        <p>Height: {pokemon.height}</p>
+        <p>Weight: {pokemon.weight}</p>
+        <p>Type: {renderTypes()}</p>
+        <p>Abilities: {renderAbilities()}</p>
+        <br />
+        <p>Moves:</p>
+        <br />
+        <ul>{renderMoves()}</ul>
+      </div>
     </div>
   );
 };
